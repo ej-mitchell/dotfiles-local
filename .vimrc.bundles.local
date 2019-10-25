@@ -1,0 +1,18 @@
+" Language Support
+
+" Conqueror of Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Elm
+Plug 'elmcast/elm-vim'
+
+" Scala
+Plug 'derekwyatt/vim-scala'
+
+" Styling
+
+" Get better information about modes.
+Plug 'itchyny/lightline.vim'
+
+" Nerdtree file finder
+Plug 'scrooloose/nerdtree'
