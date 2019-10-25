@@ -1,0 +1,40 @@
+" Language-specific choices
+
+" Configuration for vim-scala
+au BufRead,BufNewFile *.sbt set filetype=scala
+
+" Comments highlighting, auto-formatting
+autocmd FileType json syntax match Comment +\/\/.\+$+
+autocmd BufWrite <buffer> :call CocAction('format')
+
+" Styling choices
+
+" Status Bar
+
+" Color scheme
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
+
+" Don't show modes since the status bar shows it now
+set noshowmode
+
+" Navigation Bar
+
+" Open when Vim is opened - with just 'vim' and not 'vim .'
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Mapping to trigger opening of Nav bar.
+map <Leader><Leader>n :NERDTreeToggle<CR>
+
+" CoC Settings - thanks @gnfisher!
+
+" Jump to definitions and other navigational stuff
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> gd <Plug>(coc-definition)
+
+" Use `:Format` to format current buffer - should also do on save
+command! -nargs=0 Format :call CocAction('format')
+

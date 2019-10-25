@@ -1,0 +1,30 @@
+# Design Preferences
+
+#  modes
+setw -g clock-mode-colour colour5
+
+# statusbar
+set -g status-style bg='#859900',fg='#002b36'
+set -g status-position bottom
+set -g status-justify left
+set -g status-left ''
+set -g status-right '#[fg=#002b36,bg=#859900] %m/%d #[fg=#002b36,bg=#859900] %H:%M:%S '
+set -g status-right-length 50
+set -g status-left-length 20
+
+# pane number display
+set-option -g display-panes-active-colour '#268bd2'
+set-option -g display-panes-colour '#859900'
+
+# messages
+set -g message-style 'fg=#fdf6e3 bg=#6c71c4 bold'
+
+#pane border
+set -g pane-border-style "fg=#6c71c4"
+set -g pane-active-border-style "bg=default fg=#2aa198"
+
+# Mouse Movements
+set -g mouse on
+
+# Scroll History
+set -g history-limit 30000

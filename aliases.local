@@ -1,0 +1,5 @@
+alias adsu="cd ~/documents/dev/ads-quoting/ads-quoting-ui"
+alias adss="cd ~/documents/dev/ads-quoting/ads-quoting-server"
+
+# Shortcuts
+alias lsa="ls -a"
