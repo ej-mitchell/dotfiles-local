@@ -9,6 +9,9 @@ autocmd BufWrite <buffer> :call CocAction('format')
 
 " Styling choices
 
+" Fix Popover color
+highlight Pmenu ctermbg=gray
+
 " Status Bar
 
 " Color scheme
